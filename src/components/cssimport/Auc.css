@@ -1,0 +1,81 @@
+.aucfont{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.squareit:focus{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 20s linear infinite;
+}
+  
+.shimit {
+    animation: shimmer 2.5s infinite;
+    height: calc(10vw + 45px);
+    border: calc(1vw + 4.5px) double #333;
+    box-shadow: 0 0 1vw rgb(171, 171, 171) , 0 0 2vw rgb(255, 255, 255), 0 0 3vw rgb(255, 255, 255);
+}
+@keyframes shimmer {
+    0% {
+      filter: brightness(105%);
+      transform: scale(1);
+    }
+    50% {
+      filter: brightness(170%);
+      transform: scale(1.1);
+    }
+    100% {
+      filter: brightness(105%);
+      transform: scale(1);
+    }
+}
+
+.highlite{
+  background-image: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgb(255, 255, 255) 50%);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: .6px;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+  
+.help-icon .help-text {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65vw;
+  padding: 4px 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: calc(1vw + 7px);
+  text-align: left;
+  border: .4vw solid black;
+  border-radius: 12px;
+}
+  
+.help-icon:hover .help-text {
+  display: block;
+}
+
+.megabutton{
+  border: .4vw solid black;
+  height: clamp(1px, 21vh, 1000px);
+  margin: 5px;
+  border-radius: 3vh;
+  padding: 1vh;
+  width: calc(45vw + 100px);
+  color: white;
+  background-color: rgb(0, 0, 0);
+  align-content: center;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium';
+  z-index: 1;
+}
+.megabutton:hover{
+  font-size: larger;
+}
+.efont{
+  font-family: 'Franklin Gothic Medium';
+}

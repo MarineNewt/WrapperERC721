@@ -1,0 +1,45 @@
+
+.rainbow-button {
+    width:calc(28vw + 6px);
+    height:calc(4vw + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    align-items:center;
+    text-align: center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:2vw;
+    font-weight:bold;
+}
+.rainbow-button:hover {
+    animation:slidebg 2s linear infinite;
+}
+.glowit:hover {
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(66, 75, 86) 90%);
+    color: rgb(0, 0, 0);
+}
+  
+@keyframes slidebg {
+    to {
+      background-position:40vw;
+    }
+}
+
+.cardcontainer{
+    display: flex;
+    gap: 10px;
+}
+.card{
+    transition: 300ms ease-in-out;
+    height: calc(11vw + 30px);
+}
+.card + .card{
+    margin-left: -10%;
+}
+.card:hover{
+    transform: rotate(-4deg);
+}
+.card:hover ~ .card{
+    z-index: 1;
+    translate: 60px;
+}

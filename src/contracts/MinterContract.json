@@ -1,0 +1,43 @@
+{
+	"contractName":"Minter",
+	"abi": [
+		{
+			"inputs": [
+				{
+					"internalType": "address",
+					"name": "_target",
+					"type": "address"
+				},
+				{
+					"internalType": "uint256",
+					"name": "_times",
+					"type": "uint256"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "constructor"
+		}
+	],
+	"networks": {
+	"1": {
+	  "events": {},
+	  "links": {},
+	  "address": "0xca2576Fe376f696d7af21F732c3962CD96C2dB11",
+	  "transactionHash": "0x7c2fe6570455beab01e9635b2e6ef4b57dd395a373b8220e3f94122d71a3be5d"
+	},
+	"5": {
+		"events": {},
+		"links": {},
+		"address": "0x0000000000000000000000000000000000000000",
+		"transactionHash": "0x0000000000000000000000000000000000000000 ",
+		"NetworkName": "Goreli"
+	  },
+	"137": {
+		"events": {},
+		"links": {},
+		"address": "0x0000000000000000000000000000000000000000",
+		"transactionHash": "0x0000000000000000000000000000000000000000 ",
+		"NetworkName": "Polygon"
+	  }
+  }
+}

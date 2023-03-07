@@ -1,0 +1,125 @@
+.section{
+    font-family: "Times New Roman", Times, serif;
+    /*
+    Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif //fun, playful
+    Times New Roman", Times, serif  //Tight, informative
+    Arial, Helvetica, sans-serif  //Relaxed informative
+    Verdana, Geneva, Tahoma, sans-serif  //Smooth general
+    */
+}
+.section h3{
+  font-size: clamp(21px, 2.7vw, 200px);
+}
+.sectionwriter{
+  font-size: clamp(17px, 1.39vw, 200px);
+}
+
+.Sectionbutton{
+    height: clamp(35px, 4vw, 70px);
+    border-radius: 50%;
+}
+.Sectionbutton:hover{
+    box-shadow: 0 0 0 5px rgba(255,255,255,1);    
+}
+.Sectionbutton:active{
+    box-shadow: 0 0 0 5px rgb(66, 75, 86);  
+}
+
+.responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: space-evenly;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+
+.team-card {
+  font-size: clamp(17px, 1.2vw, 20px);
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 25px;
+  max-width: 250px;
+  border-width: 6px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgba(255,255,255,1), rgb(66, 75, 86)) 1;
+}
+.team-card p {
+  margin-bottom: 15px;
+}
+.team-card img {
+  height: 140px;
+  /* clip-path: circle(50% at 50% 50%); */
+  border-radius: 10%;
+  margin-bottom: 15px;
+}
+.team-card img.icon {
+  height: 20px;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  width: clamp(100px, 13.5vw, 1000px);
+  height: clamp(100px, 13.5vw, 1000px);
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  color: black;
+}
+/* Style the back side */
+.flip-card-back {
+  color: white;
+  transform: rotateY(180deg);
+}
+.flipperimg{
+  height: clamp(100px, 13.5vw, 1000px);
+  width: clamp(100px, 13.5vw, 1000px);
+}
