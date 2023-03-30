@@ -7,8 +7,8 @@ import './App.css';
 import {
   solidityCompiler,
 } from '@agnostico/browser-solidity-compiler';
-import NFTcon from '../contracts/Wrapper.json';
-import content from '../InitContract/Wrapper.sol';
+import NFTcon from '../contracts/Wrapper721.json';
+import content from '../InitContract/Wrapper721.sol';
 import Axios from "axios";
 
 
