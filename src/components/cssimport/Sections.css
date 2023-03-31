@@ -123,3 +123,25 @@
   height: clamp(100px, 13.5vw, 1000px);
   width: clamp(100px, 13.5vw, 1000px);
 }
+
+.typeButton{
+  color: white;
+  background-color: rgb(228, 157, 236);
+  border-radius: 5px;
+  font-size: clamp(1px, 1.5vw, 1000px);
+  border: 2px solid gray;
+}
+
+.typeButtonA{
+  border-radius: 5px;
+  font-size: clamp(1px, 1.5vw, 1000px);
+  border: 2px solid black;
+  background-color: rgb(234, 133, 240);
+  color: black;
+}
+
+.fitcontent{
+  margin: 1%;
+  width: fit-content;
+  display: inline-block;
+}

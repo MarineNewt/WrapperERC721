@@ -10,7 +10,9 @@ class Home extends Component {
             <HSection 
                     section={this.props.section}
                     sectionTier={this.props.sectionTier}
-                    deploy={this.props.deploy}/>
+                    deploy={this.props.deploy}
+                    setCType={this.props.setCType}
+                    contractType={this.props.contractType}/>
                     <br></br>
           </div>
           <br></br>

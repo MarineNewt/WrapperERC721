@@ -128,6 +128,9 @@ class App extends Component {
       }, 3000);
     }
   }
+  setCType = (ctype) => {
+    this.setState({ contractType: ctype})
+  }
 
   WrapUnwrap = (wrap, token) => {
     if(this.state.account === '0x0'){this.loadWallet(); return}
@@ -153,6 +156,7 @@ class App extends Component {
       WrapperOrigin: '',
       NFTContractSupply: 0,
       NFTContractBalance: 0,
+      contractType: 721,
       pageTier: 1,
       sectionTier: 1,
       blockNumber: 0,
@@ -166,6 +170,8 @@ class App extends Component {
     if (this.state.pageTier === 1) {
       content = <Home   
                   deploy={this.deploy}   
+                  setCType={this.setCType}
+                  contractType={this.state.contractType}
                   />}   
     if (this.state.pageTier === 2) {
       content = <Interact   

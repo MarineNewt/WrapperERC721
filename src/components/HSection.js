@@ -11,6 +11,10 @@ class HSection extends Component {
           <div className="centerit" style={{}}>
             <h1 className="centerit" style={{}}>Contract Wrapper</h1>
             <br></br>
+            <div className="flex">
+              <form className="fitcontent" onSubmit={(event) => { event.preventDefault();this.props.setCType(721)}}> {this.props.contractType === 721 && <button className="typeButtonA submit" >ERC721</button>} {this.props.contractType !== 721 && <button className="typeButton submit" >ERC721</button>}</form>
+              <form className="fitcontent" onSubmit={(event) => { event.preventDefault();this.props.setCType(1155)}}> {this.props.contractType === 1155 && <button className="typeButtonA submit" >ERC1155</button>} {this.props.contractType !== 1155 && <button className="typeButton submit" >ERC1155</button>} </form>
+            </div>
             <form onSubmit={(event) => {
             event.preventDefault()
             let ContractTBW
